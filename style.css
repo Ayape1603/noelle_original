@@ -1,0 +1,183 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.wrap {
+    background-color: #FAF8F5;
+    width: 100vw;
+    height: 1000px;
+	overflow: hidden;
+}
+
+header {
+    width: 100vw;
+	height: 100vh;
+    background: url(/image/first/first.png) center / cover no-repeat;
+	position: relative;
+}
+
+
+
+
+/* SP版 */
+@media screen and (max-width: 600px) {
+
+	.pc {
+		display: none;
+	}
+	.lt{
+		position: absolute;
+		top: 10%;
+		left: 10%;
+	}
+	.lb{
+		position: absolute;
+		bottom: 10%;
+		left: 10%;
+	}
+	.rb{
+		position: absolute;
+		bottom: 10%;
+		right: 10%;
+	}
+	.rb img{
+		margin-bottom: 24px;
+	}
+	button {
+		margin: 0;
+		padding: 0;
+		outline: 0;
+		border: 0;
+		border-radius: 0;
+		background: transparent;
+		color: inherit;
+		vertical-align: middle;
+		text-align: inherit;
+		font: inherit;
+		-webkit-appearance: none;
+		appearance: none;
+	}
+	/**************** 以下、ハンバーガーボタンのスタイリング ****************/
+	.btn {
+		/* ボタンの配置位置  */
+		position: fixed;
+		top: 0px;
+		right: 0px;
+		/* 最前面に */
+		z-index: 10;
+		/* ボタンの大きさ  */
+		width: 48px;
+		height: 48px;
+	}
+	/***** 真ん中のバーガー線 *****/
+	.btn-line {
+		display: block;
+		width: 100%;
+		height: auto;
+		transition: 0.2s;
+	}
+	.btn-line.open {
+		transform: rotate(180deg);
+		transition: 0.2s;
+	}
+	.menu {
+		/* メニューを縦に */
+		display: flex;
+		flex-direction: column;
+		position: fixed;
+		text-align: left;
+		/* メニューの位置マイナス指定で画面外に */
+		top: 10%;
+		right: -40%;
+		width: 40%;
+		height: 10vh;
+		color: #fff;
+		transition: 0.3s;
+	}
+	
+	.menu-list {
+		/* メニューテキスト位置をリスト内中心に */
+		display: flex;
+		width: 100%;
+		height: 100%;
+		font-size: 4vw;
+	}
+	
+	.menu-list:hover {
+		background-color: rgba(255, 255, 255, .5);
+		color: #5D261B;
+		cursor: pointer;
+		transition: .3s;
+	}
+	
+	/***** メニューオープン時位置0にして画面内に *****/
+	.menu.open {
+		right: 0;
+	}
+
+
+}
+
+/* pc版 */
+@media screen and (min-width: 600px) {
+
+	.sp{
+		display: none;
+	}
+	.lt{
+		position: absolute;
+		top: 10%;
+		left: 10%;
+	}
+	.lb{
+		position: absolute;
+		bottom: 10%;
+		left: 10%;
+	}
+	.rb{
+		position: absolute;
+		bottom: 10%;
+		right: 10%;
+	}
+	.rb img{
+		margin-bottom: 24px;
+	}
+
+	.btn {
+		display: none;
+	}
+
+	.menu {
+		/* メニューを横に */
+		display: flex;
+		flex-direction:column;
+		position: absolute;
+		top: 10%;
+		right: 10%;
+		height: 20%;
+		color: #fff;
+		font-size: 100%;
+		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	}
+
+	/**************** 以下、ハンバーガーボタンのスタイリング ****************/
+	
+	.menu-list {
+		/* メニューテキスト位置をリスト内中心に */
+		display: flex;
+		width: 100%;
+		height: 100%;
+	}
+	
+	.menu-list:hover {
+		background-color: rgba(255, 255, 255, .5);
+		color: #333;
+		cursor: pointer;
+		transition: .3s;
+	}
+	.brank {
+		margin-right: 50px;
+	}
+}
