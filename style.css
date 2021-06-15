@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Freestyle Script Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Freestyle Script Regular'), url('FREESCPT.woff') format('woff');
+    }
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -11,6 +18,13 @@
 	overflow: hidden;
 }
 
+p{
+	color: #592217;
+}
+.terrace {
+	font-family: 'Freestyle Script Regular';
+}
+
 header {
     width: 100vw;
 	height: 100vh;
@@ -18,8 +32,110 @@ header {
 	position: relative;
 }
 
+.menu-list a{
+	color: #fff;
+	text-decoration: none;
+}
+.menu-list a:hover{
+	color: #592217;
+}
+
+.concept {
+	background-color: #FAF8F5;
+	padding: 10%;
+}
+.concept-img img {
+	width: 30%;
+}
+.concept-img2 {
+	
+}
+.concept p{
+	font-family: 'UD デジタル 教科書体 NK-R';
+	font-size: 70%;
+	padding: 10%;
+	text-align: center;
+}
+.concept-text-big {
+	font-size: 300%;
+}
+
+/* moveSNS */
+.moveSNS {
+	text-align: center;
+	size: 80%;
+	padding: 10%;
+}
+
+/**** About us ****/
+.aboutus {
+	background-color: #F0E2CA;
+}
+/* letter up */
+.minna {
+	font-family: 'UD デジタル 教科書体 NK-R';
+	font-size: 200%;
+}
+.subtitle {
+	font-family: 'UD デジタル 教科書体 NK-R';
+	letter-spacing: 5px;
+	text-align: center;
+	padding: 7%;
+	padding-bottom: 7%;
+}
+.subletter {
+	font-family: 'UD デジタル 教科書体 NK-R';
+	letter-spacing: 5px;
+	padding: 5%;
+}
+.letter {
+	font-family: 'UD デジタル 教科書体 NK-R';
+	letter-spacing: 5px;
+	padding-bottom: 7%;
+}
+.up-img{
+	left: 0;
+}
+/* letter down */
+.minna2 {
+	font-size: 200%;
+}
+.letter-down{
+	right: 0;
+}
 
 
+/**** SNS ****/
+.SNSmessage {
+	text-align: center;
+	background-color: #FAF8F5;
+	padding: 2%;
+}
+.SNS {
+	background-color: #F0E2CA;
+	text-align: center;
+	padding: 2%;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	letter-spacing: 3px;
+	font-size: 100%;
+	color: #592217;
+}
+.SNS a{
+	color: #592217;
+}
+.SNS a:hover{
+	color: #fff;
+}
+
+/**** footer ****/
+footer {
+	background-color: #865B3C;
+	color: #FAF8F5;
+	text-align: center;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	padding: 1%;
+	letter-spacing: 1px;
+}
 
 /* SP版 */
 @media screen and (max-width: 600px) {
@@ -34,7 +150,7 @@ header {
 	}
 	.lb{
 		position: absolute;
-		bottom: 10%;
+		bottom: 20%;
 		left: 10%;
 	}
 	.rb{
@@ -46,7 +162,7 @@ header {
 		margin-bottom: 24px;
 	}
 	button {
-		margin: 0;
+		margin: 10%;
 		padding: 0;
 		outline: 0;
 		border: 0;
@@ -88,13 +204,15 @@ header {
 		flex-direction: column;
 		position: fixed;
 		text-align: left;
+		margin-top: 15%;
 		/* メニューの位置マイナス指定で画面外に */
 		top: 10%;
-		right: -40%;
-		width: 40%;
+		right: -30%;
+		width: 30%;
 		height: 10vh;
 		color: #fff;
 		transition: 0.3s;
+		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	}
 	
 	.menu-list {
@@ -102,7 +220,7 @@ header {
 		display: flex;
 		width: 100%;
 		height: 100%;
-		font-size: 4vw;
+		font-size: 15%;
 	}
 	
 	.menu-list:hover {
@@ -116,7 +234,19 @@ header {
 	.menu.open {
 		right: 0;
 	}
+	.brank {
+		margin-right: 50px;
+	}
 
+	.SNS {
+		background-color: #F0E2CA;
+		text-align: center;
+		padding: 2%;
+		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+		letter-spacing: 3px;
+		font-size: 70%;
+		color: #592217;
+	}
 
 }
 
@@ -173,11 +303,20 @@ header {
 	
 	.menu-list:hover {
 		background-color: rgba(255, 255, 255, .5);
-		color: #333;
+		color: #5D261B;
 		cursor: pointer;
 		transition: .3s;
 	}
 	.brank {
 		margin-right: 50px;
+	}
+	.SNS {
+		background-color: #F0E2CA;
+		text-align: center;
+		padding: 2%;
+		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+		letter-spacing: 3px;
+		font-size: 100%;
+		color: #592217;
 	}
 }
