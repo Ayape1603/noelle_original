@@ -1,9 +1,9 @@
 @font-face {
-    font-family: 'Freestyle Script Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Freestyle Script Regular'), url('FREESCPT.woff') format('woff');
-    }
+	font-family: 'Freestyle Script Regular';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Freestyle Script Regular'), url('FREESCPT.woff') format('woff');
+}
 
 * {
 	box-sizing: border-box;
@@ -12,55 +12,81 @@
 }
 
 .wrap {
-    background-color: #FAF8F5;
-    width: 100vw;
-    height: 1000px;
+	background-color: #FAF8F5;
+	width: 100vw;
+	height: 1000px;
 	overflow: hidden;
 }
 
-p{
+p {
 	color: #592217;
 }
+
 .terrace {
 	font-family: 'Freestyle Script Regular';
+	letter-spacing: 7px;
+	font-weight: 400;
 }
 
 header {
-    width: 100vw;
+	width: 100vw;
 	height: 100vh;
-    background: url(/image/first/first.png) center / cover no-repeat;
+	background: url(/image/first/first.png) center / cover no-repeat;
 	position: relative;
 }
 
-.menu-list a{
+.menu-list a {
 	color: #fff;
 	text-decoration: none;
 }
-.menu-list a:hover{
+
+.menu-list a:hover {
 	color: #592217;
 }
 
+.title {
+	text-align: center;
+}
+
+/**** Concept ****/
 .concept {
 	background-color: #FAF8F5;
 	padding: 10%;
+	text-align: center;
+	letter-spacing: 5px;
+	line-height: 40px;
 }
-.concept-img img {
-	width: 30%;
+
+.concept_cafe {
+	font-size: 200%;
 }
-.concept-img2 {
-	
+
+.concept_t {
+	font-size: 250%;
 }
-.concept p{
+
+.concept p {
 	font-family: 'UD デジタル 教科書体 NK-R';
-	font-size: 70%;
+	font-size: 80%;
 	padding: 10%;
 	text-align: center;
 }
+
+.terasu {
+	font-size: 140%;
+}
+
+.concept-img img {
+	width: 70vw;
+}
+
+
+
 .concept-text-big {
 	font-size: 300%;
 }
 
-/* moveSNS */
+/**** moveSNS ****/
 .moveSNS {
 	text-align: center;
 	size: 80%;
@@ -71,11 +97,12 @@ header {
 .aboutus {
 	background-color: #F0E2CA;
 }
-/* letter up */
-.minna {
-	font-family: 'UD デジタル 教科書体 NK-R';
-	font-size: 200%;
+
+.aboutus p {
+	letter-spacing: 5px;
+	line-height: 40px;
 }
+
 .subtitle {
 	font-family: 'UD デジタル 教科書体 NK-R';
 	letter-spacing: 5px;
@@ -83,25 +110,62 @@ header {
 	padding: 7%;
 	padding-bottom: 7%;
 }
+
+/* flex */
+.more-container {
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+	margin: 0;
+}
+
+.more-container:nth-child(even) {
+	flex-direction: row-reverse;
+}
+
 .subletter {
 	font-family: 'UD デジタル 教科書体 NK-R';
 	letter-spacing: 5px;
-	padding: 5%;
+	padding-bottom: 5%;
 }
+
 .letter {
 	font-family: 'UD デジタル 教科書体 NK-R';
 	letter-spacing: 5px;
 	padding-bottom: 7%;
 }
-.up-img{
-	left: 0;
-}
-/* letter down */
-.minna2 {
+
+/* letter up */
+.minna {
+	font-family: 'UD デジタル 教科書体 NK-R';
 	font-size: 200%;
 }
-.letter-down{
-	right: 0;
+
+.letter-up {
+	margin-top: 3%;
+	margin-left: 10%;
+}
+
+/* letter down */
+.minna2 {
+	font-size: 250%;
+}
+
+.letter-down {
+	margin-top: 3%;
+	margin-right: 10%;
+}
+
+/***** Ac *****/
+.plate {
+	text-align: center;
+	background-color: red;
+}
+.midtitle1 {
+	text-align: right;
+}
+.midtitle2 {
+	text-align: left;
 }
 
 
@@ -111,6 +175,7 @@ header {
 	background-color: #FAF8F5;
 	padding: 2%;
 }
+
 .SNS {
 	background-color: #F0E2CA;
 	text-align: center;
@@ -120,10 +185,12 @@ header {
 	font-size: 100%;
 	color: #592217;
 }
-.SNS a{
+
+.SNS a {
 	color: #592217;
 }
-.SNS a:hover{
+
+.SNS a:hover {
 	color: #fff;
 }
 
@@ -143,24 +210,29 @@ footer {
 	.pc {
 		display: none;
 	}
-	.lt{
+
+	.lt {
 		position: absolute;
 		top: 10%;
 		left: 10%;
 	}
-	.lb{
+
+	.lb {
 		position: absolute;
 		bottom: 20%;
 		left: 10%;
 	}
-	.rb{
+
+	.rb {
 		position: absolute;
 		bottom: 10%;
 		right: 10%;
 	}
-	.rb img{
+
+	.rb img {
 		margin-bottom: 24px;
 	}
+
 	button {
 		margin: 10%;
 		padding: 0;
@@ -175,6 +247,7 @@ footer {
 		-webkit-appearance: none;
 		appearance: none;
 	}
+
 	/**************** 以下、ハンバーガーボタンのスタイリング ****************/
 	.btn {
 		/* ボタンの配置位置  */
@@ -187,17 +260,22 @@ footer {
 		width: 48px;
 		height: 48px;
 	}
+
 	/***** 真ん中のバーガー線 *****/
 	.btn-line {
 		display: block;
 		width: 100%;
 		height: auto;
 		transition: 0.2s;
+		color: #fff;
+		text-shadow: #752e20 0 0 10px;
 	}
+
 	.btn-line.open {
 		transform: rotate(180deg);
 		transition: 0.2s;
 	}
+
 	.menu {
 		/* メニューを縦に */
 		display: flex;
@@ -212,9 +290,11 @@ footer {
 		height: 10vh;
 		color: #fff;
 		transition: 0.3s;
+		text-shadow: #752e20 0 0 10px;
 		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 	}
-	
+
 	.menu-list {
 		/* メニューテキスト位置をリスト内中心に */
 		display: flex;
@@ -222,22 +302,101 @@ footer {
 		height: 100%;
 		font-size: 15%;
 	}
-	
+
 	.menu-list:hover {
 		background-color: rgba(255, 255, 255, .5);
 		color: #5D261B;
 		cursor: pointer;
 		transition: .3s;
 	}
-	
+
 	/***** メニューオープン時位置0にして画面内に *****/
 	.menu.open {
 		right: 0;
 	}
+
 	.brank {
 		margin-right: 50px;
 	}
 
+	/************ About us ************/
+	.aboutus {
+		background-color: #F0E2CA;
+	}
+
+	.aboutus p {
+		letter-spacing: 5px;
+		line-height: 40px;
+	}
+
+	.subtitle {
+		font-family: 'UD デジタル 教科書体 NK-R';
+		letter-spacing: 5px;
+		text-align: center;
+		padding: 7%;
+		padding-bottom: 7%;
+	}
+
+	/* flex */
+	.more-container {
+		display: flex;
+		justify-content: space-between;
+		flex-flow: row wrap;
+	}
+
+	.more-container:nth-child(even) {
+		flex-direction: row-reverse;
+	}
+
+	.more-container img {
+		width: 80%;
+	}
+
+	.subletter {
+		font-family: 'UD デジタル 教科書体 NK-R';
+		letter-spacing: 5px;
+
+	}
+
+	.letter-sp {
+		font-family: 'UD デジタル 教科書体 NK-R';
+		letter-spacing: 5px;
+	}
+
+	.letter {
+		margin-bottom: 10%;
+	}
+
+	/* letter up */
+	.minna {
+		font-family: 'UD デジタル 教科書体 NK-R';
+		font-size: 200%;
+	}
+
+	.letter-up {
+		margin-top: 3%;
+	}
+
+	.letter-up p {}
+
+	/* letter down */
+	.minna2 {
+		font-size: 250%;
+	}
+
+	.letter-down {
+		margin: 5%;
+	}
+
+	.down-img {
+		text-align: right;
+	}
+
+	p.letter-sp.sp {
+		margin-bottom: 30px;
+	}
+
+	/****** SNS ******/
 	.SNS {
 		background-color: #F0E2CA;
 		text-align: center;
@@ -253,25 +412,29 @@ footer {
 /* pc版 */
 @media screen and (min-width: 600px) {
 
-	.sp{
+	.sp {
 		display: none;
 	}
-	.lt{
+
+	.lt {
 		position: absolute;
 		top: 10%;
 		left: 10%;
 	}
-	.lb{
+
+	.lb {
 		position: absolute;
 		bottom: 10%;
 		left: 10%;
 	}
-	.rb{
+
+	.rb {
 		position: absolute;
 		bottom: 10%;
 		right: 10%;
 	}
-	.rb img{
+
+	.rb img {
 		margin-bottom: 24px;
 	}
 
@@ -282,7 +445,7 @@ footer {
 	.menu {
 		/* メニューを横に */
 		display: flex;
-		flex-direction:column;
+		flex-direction: column;
 		position: absolute;
 		top: 10%;
 		right: 10%;
@@ -293,23 +456,89 @@ footer {
 	}
 
 	/**************** 以下、ハンバーガーボタンのスタイリング ****************/
-	
+
 	.menu-list {
 		/* メニューテキスト位置をリスト内中心に */
 		display: flex;
 		width: 100%;
 		height: 100%;
 	}
-	
+
 	.menu-list:hover {
 		background-color: rgba(255, 255, 255, .5);
 		color: #5D261B;
 		cursor: pointer;
 		transition: .3s;
 	}
+
 	.brank {
 		margin-right: 50px;
 	}
+
+	/**** About us ****/
+	.aboutus {
+		background-color: #F0E2CA;
+	}
+
+	.aboutus p {
+		letter-spacing: 5px;
+		line-height: 40px;
+	}
+
+	.subtitle {
+		font-family: 'UD デジタル 教科書体 NK-R';
+		letter-spacing: 5px;
+		text-align: center;
+		padding: 7%;
+		padding-bottom: 7%;
+	}
+
+	/* flex */
+	.more-container {
+		display: flex;
+		justify-content: space-between;
+		flex-flow: row wrap;
+		margin: 0;
+	}
+
+	.more-container:nth-child(even) {
+		flex-direction: row-reverse;
+	}
+
+	.subletter {
+		font-family: 'UD デジタル 教科書体 NK-R';
+		letter-spacing: 5px;
+		padding-bottom: 5%;
+	}
+
+	.letter {
+		font-family: 'UD デジタル 教科書体 NK-R';
+		letter-spacing: 5px;
+		padding-bottom: 7%;
+	}
+
+	/* letter up */
+	.minna {
+		font-family: 'UD デジタル 教科書体 NK-R';
+		font-size: 200%;
+	}
+
+	.letter-up {
+		margin-top: 3%;
+		margin-left: 10%;
+	}
+
+	/* letter down */
+	.minna2 {
+		font-size: 250%;
+	}
+
+	.letter-down {
+		margin-top: 3%;
+		margin-right: 10%;
+	}
+
+
 	.SNS {
 		background-color: #F0E2CA;
 		text-align: center;
