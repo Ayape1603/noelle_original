@@ -14,7 +14,7 @@
 .wrap {
 	background-color: #FAF8F5;
 	width: 100vw;
-	height: 1000px;
+	height: 100vh;
 	overflow: hidden;
 }
 
@@ -47,11 +47,16 @@ header {
 .title {
 	text-align: center;
 }
+.title img {
+	width: 45%;
+	margin-top: 10%;
+}
+
 
 /**** Concept ****/
 .concept {
 	background-color: #FAF8F5;
-	padding: 10%;
+	/* padding: 10%; */
 	text-align: center;
 	letter-spacing: 5px;
 	line-height: 40px;
@@ -68,7 +73,8 @@ header {
 .concept p {
 	font-family: 'UD デジタル 教科書体 NK-R';
 	font-size: 80%;
-	padding: 10%;
+	/* padding: 10%; */
+	margin-bottom: 10%;
 	text-align: center;
 }
 
@@ -107,8 +113,11 @@ header {
 	font-family: 'UD デジタル 教科書体 NK-R';
 	letter-spacing: 5px;
 	text-align: center;
-	padding: 7%;
-	padding-bottom: 7%;
+	padding: 2%;
+	padding-bottom: 6%;
+}
+.subtitle p {
+	float: 10vh;
 }
 
 /* flex */
@@ -157,16 +166,49 @@ header {
 }
 
 /***** Ac *****/
+.ac {
+	background-color: #FAF8F5;
+}
+.title-explain {
+	text-align: center;
+	line-height: 180%;
+}
 .plate {
 	text-align: center;
-	background-color: red;
 }
-.midtitle1 {
-	text-align: right;
+.element {
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+	/* margin-right: 10%;
+	margin-left: 10%; */
+	padding: 10%;
+}
+.element:nth-child(even) {
+	flex-direction: row-reverse;
+}
+.element img {
+	width: 280px;
+	margin-bottom: 25%;
+	margin-right: 7%;
+}
+
+/* .midtitle1 {
+	position: relative;
+	left: 40%;
+	overflow: hidden;
 }
 .midtitle2 {
-	text-align: left;
+	left: -100%;
+	overflow: hidden;
+} */
+
+/***** member voice *****/
+.member img {
+	width: 280px;
 }
+
 
 
 /**** SNS ****/
@@ -329,14 +371,6 @@ footer {
 		line-height: 40px;
 	}
 
-	.subtitle {
-		font-family: 'UD デジタル 教科書体 NK-R';
-		letter-spacing: 5px;
-		text-align: center;
-		padding: 7%;
-		padding-bottom: 7%;
-	}
-
 	/* flex */
 	.more-container {
 		display: flex;
@@ -483,14 +517,6 @@ footer {
 	.aboutus p {
 		letter-spacing: 5px;
 		line-height: 40px;
-	}
-
-	.subtitle {
-		font-family: 'UD デジタル 教科書体 NK-R';
-		letter-spacing: 5px;
-		text-align: center;
-		padding: 7%;
-		padding-bottom: 7%;
 	}
 
 	/* flex */
