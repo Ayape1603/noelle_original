@@ -189,22 +189,47 @@ header {
 	flex-direction: row-reverse;
 }
 .element img {
-	width: 280px;
+	width: 300px;
+	height: ;
 	margin-bottom: 25%;
 	margin-right: 7%;
 }
-
-/* .midtitle1 {
-	position: relative;
-	left: 40%;
-	overflow: hidden;
+.sabusuku {
+	height: 540px;
 }
-.midtitle2 {
-	left: -100%;
-	overflow: hidden;
-} */
+.planning2 {
+	margin-bottom: 0;
+}
+.midtitle {
+	position: relative;
+	margin: 10% 0;
+}
+
+.subsubtitle {
+	padding: 0 20px;
+	font-size: 250%;
+	border-bottom: medium solid #F6AB44;
+	font-family: 'UD デジタル 教科書体 NK-R';
+	letter-spacing: 5px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 100;
+}
+.subsubback {
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	letter-spacing: 27px;
+	color: #F0E2CA;
+	position: absolute;
+	transform: translateY(-50%);
+	right: -70px;
+	font-size: 1500%;
+}
 
 /***** member voice *****/
+.member {
+	text-align: center;
+}
 .member img {
 	width: 280px;
 }
