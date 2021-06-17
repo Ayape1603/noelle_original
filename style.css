@@ -348,6 +348,7 @@ footer {
 	}
 
 	.btn-line.open {
+		transform-origin: center center;
 		transform: rotate(180deg);
 		transition: 0.2s;
 	}
