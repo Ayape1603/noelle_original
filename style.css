@@ -340,8 +340,8 @@ footer {
 	/***** 真ん中のバーガー線 *****/
 	.btn-line {
 		display: block;
-		width: 100%;
-		height: auto;
+		/* width: 100%;
+		height: auto; */
 		transition: 0.2s;
 		color: #fff;
 		text-shadow: #752e20 0 0 10px;
@@ -431,10 +431,6 @@ footer {
 		line-height: 40px;
 	}
 
-	.subletter p {
-		font-size: 90%;
-	}
-
 	/* flex */
 	.more-container {
 		display: flex;
@@ -468,7 +464,7 @@ footer {
 	/* letter up */
 	.minna {
 		font-family: 'UD デジタル 教科書体 NK-R';
-		font-size: 200%;
+		font-size: 180%;
 	}
 
 	.letter-up {
@@ -479,7 +475,7 @@ footer {
 
 	/* letter down */
 	.minna2 {
-		font-size: 250%;
+		font-size: 230%;
 	}
 
 	.letter-down {
