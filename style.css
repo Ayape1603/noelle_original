@@ -15,6 +15,55 @@
 	background-color: #FAF8F5;
 }
 
+/* animation */
+.scroll-fade {
+	opacity: 0;
+	transition: all 2s
+		/*処理にかかる時間*/
+	;
+}
+
+.scroll-up {
+	opacity: 0;
+	transform: translateY(100px)
+		/*スクロールアップする距離*/
+	;
+	transition: all 2s
+		/*処理にかかる時間*/
+	;
+}
+
+.scroll-up.done,
+.scroll-fade.done {
+	opacity: 1;
+	transform: translate(0, 0);
+}
+
+.load-fade {
+	opacity: 0;
+	transition: all 2s
+		/*処理にかかる時間*/
+	;
+}
+
+.load-up {
+	opacity: 0;
+	transform: translateY(100px)
+		/*スクロールアップする距離*/
+	;
+	transition: all 2s
+		/*処理にかかる時間*/
+	;
+}
+
+.load-up.done,
+.load-fade.done {
+	opacity: 1;
+	transform: translate(0, 0);
+}
+
+/* wrap */
+
 .wrap {
 	background-color: #FAF8F5;
 	width: 100vw;
@@ -31,12 +80,92 @@ p {
 	font-weight: 400;
 }
 
+.lb-pc-terrace {
+	font-family: 'Freestyle Script Regular';
+	font-size: 300%;
+	letter-spacing: 7px;
+}
+
+.lt-sp-terrace {
+	font-family: 'Freestyle Script Regular';
+	font-size: 850%;
+	letter-spacing: 7px;
+}
+
+.lb-sp-terrace {
+	font-family: 'Freestyle Script Regular';
+	font-size: 250%;
+}
+
+/******* header *******/
 header {
 	width: 100vw;
 	height: 100vh;
 	background: url(/image/first/first.png) center / cover no-repeat;
 	position: relative;
 }
+
+/* lt */
+.lt p {
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	color: #fff;
+	letter-spacing: 2px;
+	line-height: 160%;
+}
+
+.header-terrace {
+	font-size: 180%;
+}
+
+.header-terrace p {}
+
+.header-explain {
+	border-bottom: thin solid #fff;
+	border-top: thin solid #fff;
+	padding: 8px
+}
+
+.header-message {
+	padding: 8px
+}
+
+/* lb */
+.lb p {
+	font-family: 'UD デジタル 教科書体 NK-R';
+	color: #fff;
+}
+
+/* rb */
+
+.rb {
+	border: thin solid #fff;
+	letter-spacing: 3px;
+	padding: 2%;
+}
+
+
+.rb-flex {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-around;
+	margin-top: 5%;
+}
+
+.rb-sign {
+	width: 30%;
+}
+
+.rb-sign img {
+	width: 100%;
+}
+
+.rb p {
+	color: #fff;
+	font-family: 'UD デジタル 教科書体 NK-R';
+}
+
+
+/******* menu *******/
 
 .menu-list a {
 	color: #fff;
@@ -140,6 +269,11 @@ header {
 	padding-bottom: 7%;
 }
 
+.letter2 {
+	font-family: 'UD デジタル 教科書体 NK-R';
+	letter-spacing: 5px;
+}
+
 /* letter up */
 .minna {
 	font-family: 'UD デジタル 教科書体 NK-R';
@@ -158,11 +292,6 @@ header {
 /* letter down */
 .minna2 {
 	font-size: 250%;
-}
-
-.letter-down {
-	margin-top: 3%;
-	margin-right: 10%;
 }
 
 /***** Ac *****/
@@ -236,13 +365,14 @@ header {
 	font-size: 190%;
 }
 
-.doubleline {
-	text-align: center;
-	border: medium solid #F6AB44;
-	padding: 5%;
-}
 
 /**** SNS ****/
+
+.SNS-flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
 
 .SNS {
 	background-color: #F0E2CA;
@@ -283,10 +413,27 @@ footer {
 		position: relativeS;
 	}
 
+	.header-terrace {
+		padding: 4px;
+	}
+
+	.header-terrace p {
+		font-size: 150%;
+	}
+
 	.lt {
 		position: absolute;
 		top: 5%;
 		left: 10%;
+		width: 180px;
+	}
+
+	.lt p {
+		font-size: 20%;
+	}
+
+	.header-explain {
+		letter-spacing: 1px;
 	}
 
 	.lb {
@@ -295,16 +442,42 @@ footer {
 		left: 10%;
 	}
 
-	.rb {
-		position: absolute;
-		left: 10%;
-		right: 10%;
-		bottom: 10%;
+	.lb p {
+		writing-mode: vertical-rl;
+		font-size: 30%;
+		letter-spacing: 5px;
+		padding-bottom: 8%;
 	}
 
-	.rb img {
-		margin-bottom: -24px;
+	.rb-box {
+		text-align: center;
 	}
+
+	.rb {
+		position: absolute;
+		left: 15%;
+		right: 15%;
+		bottom: 10%;
+		width: 70%;
+		background-color: rgba(93, 38, 27, .5);
+	}
+
+	.sanka {
+		text-align: center;
+		font-size: 10px;
+	}
+
+	.kotira {
+		width: 35%;
+		text-align: center;
+		font-size: 20px;
+	}
+
+
+
+	/* .rb img {
+		margin-bottom: -24px;
+	} */
 
 	.hamberger {}
 
@@ -366,7 +539,7 @@ footer {
 		/* メニューの位置マイナス指定で画面外に */
 		top: 10%;
 		right: -40%;
-		width: 33%;
+		width: 27%;
 		height: 10vh;
 		color: #fff;
 		transition: 0.3s;
@@ -396,11 +569,11 @@ footer {
 	}
 
 	.brank {
-		margin-right: 50px;
+		margin-right: 30px;
 	}
 
 	.title img {
-		width: 80%;
+		height: 30px;
 		margin-top: 10%;
 	}
 
@@ -500,11 +673,6 @@ footer {
 		line-height: 30px;
 	}
 
-	/* 
-	.element {
-		margin: ;
-	} */
-
 	.element img {
 		width: 90%;
 		margin-top: 10%;
@@ -545,14 +713,10 @@ footer {
 		padding: 10%;
 	}
 
-	.mamber {
+	.member {
+		border: thin solid #F6AB44;
 		padding: 5%;
-		/* transform: translate(8px, 10px); */
 	}
-
-	/*.doubleline {
-		transform: translate(15px, 10px);
-	} */
 
 	.member-photo img {
 		padding: 5%;
@@ -586,25 +750,24 @@ footer {
 		text-align: center;
 	}
 
-	/* .grade {
-		width: 20%;
-	}
-
-	.name {
-		width: 20%;
-	} */
-
 	/****** SNS ******/
 
+	.SNS-flex img {
+		height: 65px;
+		width: 10%;
+	}
+
 	.SNSmessage {
+		font-family: 'UD デジタル 教科書体 NK-R';
 		text-align: center;
 		background-color: #FAF8F5;
-		padding-top: 15%;
+		letter-spacing: 5px;
+		font-size: 75%;
+		padding: 5%;
 	}
 
 	.SNSmessage img {
-		width: 90%;
-		padding: 2%;
+		/* padding: 2%; */
 	}
 
 	.SNS {
@@ -630,6 +793,13 @@ footer {
 		position: absolute;
 		top: 10%;
 		left: 10%;
+		width: 225px;
+	}
+
+	.header-terrace {
+		font-size: 180%;
+		padding: 8px;
+		letter-spacing: 5%;
 	}
 
 	.lb {
@@ -638,15 +808,28 @@ footer {
 		left: 10%;
 	}
 
+
 	.rb {
+		width: 20%;
 		position: absolute;
 		bottom: 10%;
 		right: 10%;
 	}
 
-	.rb img {
-		margin-bottom: 24px;
+	.sanka {
+		text-align: center;
+		font-size: 20px;
 	}
+
+	.kotira {
+		width: 35%;
+		text-align: center;
+		font-size: 34px;
+	}
+
+	/* .rb img {
+		margin-bottom: 24px;
+	} */
 
 	.btn {
 		display: none;
@@ -686,7 +869,7 @@ footer {
 	}
 
 	.title img {
-		width: 45%;
+		height: 70px;
 		margin-top: 10%;
 	}
 
@@ -724,7 +907,8 @@ footer {
 		display: flex;
 		justify-content: space-between;
 		flex-flow: row wrap;
-		margin: 0;
+		margin: 0 auto;
+		width: 70%;
 	}
 
 	.more-container:nth-child(even) {
@@ -761,7 +945,7 @@ footer {
 
 	.letter-down {
 		margin-top: 3%;
-		margin-right: 10%;
+		margin-right: 5%;
 	}
 
 	/****** ac ******/
@@ -797,16 +981,23 @@ footer {
 
 	.mem-pc {}
 
-	.mamber {
-		transform: translate(1px, 10px);
+	.member {
+		position: relative;
+		text-align: center;
+	}
+
+
+	.doubleline {
+		border: medium solid #F6AB44;
+		width: 100.5%;
+		height: 100%;
+		top: -32px;
+		left: -32px;
+		position: absolute;
 	}
 
 	.member-pc {
 		text-align: center;
-	}
-
-	.doubleline {
-		transform: translate(20px, 10px);
 	}
 
 	.member-photo img {
@@ -842,10 +1033,24 @@ footer {
 
 	/****** SNS ******/
 
+	.SNS-flex img {
+		height: 65px;
+	}
+
 	.SNSmessage {
 		text-align: center;
 		background-color: #FAF8F5;
 		padding: 2%;
+	}
+
+	.SNSmessage p {
+		font-size: 150%;
+		font-family: 'UD デジタル 教科書体 NK-R';
+		letter-spacing: 5px;
+	}
+
+	.SNSmessage.sp img {
+		width: 5%;
 	}
 
 	.SNS {
