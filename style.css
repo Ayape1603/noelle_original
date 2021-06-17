@@ -361,14 +361,14 @@ footer {
 		margin-top: 15%;
 		/* メニューの位置マイナス指定で画面外に */
 		top: 10%;
-		right: -30%;
-		width: 30%;
+		right: -40%;
+		width: 33%;
 		height: 10vh;
 		color: #fff;
 		transition: 0.3s;
 		text-shadow: #752e20 0 0 10px;
 		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
+		z-index: 1000;
 	}
 
 	.menu-list {
@@ -418,7 +418,7 @@ footer {
 
 	.moveSNS img {
 		text-align: center;
-		width: 0%;
+		width: 60%;
 	}
 
 	/************ About us ************/
@@ -429,6 +429,10 @@ footer {
 	.aboutus p {
 		letter-spacing: 5px;
 		line-height: 40px;
+	}
+
+	.subletter p {
+		font-size: 90%;
 	}
 
 	/* flex */
