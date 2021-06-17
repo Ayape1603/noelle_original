@@ -285,7 +285,7 @@ footer {
 
 	.lt {
 		position: absolute;
-		top: 10%;
+		top: 5%;
 		left: 10%;
 	}
 
@@ -350,6 +350,7 @@ footer {
 	}
 
 	.btn-line.open {
+		width: auto;
 		transform: rotate(180deg);
 		transform-origin: center center;
 		transition: 0.2s;
