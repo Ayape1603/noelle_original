@@ -528,8 +528,13 @@ footer {
 
 	/****** mem ******/
 
+	.member-letter-box {
+		text-align: center;
+	}
+
 	.member-letter {
 		margin-bottom: 40%;
+		font-size: 90%;
 	}
 
 	.membervoice {
@@ -555,6 +560,7 @@ footer {
 	.member-section {
 		position: relative;
 		margin: 15% 0;
+		text-align: center;
 	}
 
 	.member p {
