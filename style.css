@@ -547,7 +547,7 @@ footer {
 
 	.member-photo img {
 		padding: 5%;
-		width: 90%;
+		/* width: 90%; */
 		/* height: 90%; */
 		text-align: center;
 	}
