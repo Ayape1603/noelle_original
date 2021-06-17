@@ -450,7 +450,7 @@ footer {
 		writing-mode: vertical-rl;
 		font-size: 30%;
 		letter-spacing: 5px;
-		padding-bottom: 8%;
+		padding-bottom: 25%;
 	}
 
 	.rb-box {
@@ -461,7 +461,7 @@ footer {
 		position: absolute;
 		left: 15%;
 		right: 15%;
-		bottom: 10%;
+		bottom: 7%;
 		width: 70%;
 		background-color: rgba(93, 38, 27, .5);
 	}
