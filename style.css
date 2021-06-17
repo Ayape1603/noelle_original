@@ -14,6 +14,7 @@
 .backcolor {
 	background-color: #FAF8F5;
 }
+
 .wrap {
 	background-color: #FAF8F5;
 	width: 100vw;
@@ -50,11 +51,6 @@ header {
 .title {
 	text-align: center;
 }
-.title img {
-	width: 45%;
-	margin-top: 10%;
-}
-
 
 /**** Concept ****/
 .concept {
@@ -64,9 +60,11 @@ header {
 	letter-spacing: 5px;
 	line-height: 40px;
 }
+
 .concept-letter {
 	margin-top: 5%;
 }
+
 .concept_cafe {
 	font-size: 200%;
 }
@@ -97,13 +95,6 @@ header {
 	font-size: 300%;
 }
 
-/**** moveSNS ****/
-.moveSNS {
-	text-align: center;
-	size: 80%;
-	padding: 10%;
-}
-
 /**** About us ****/
 .aboutus {
 	background-color: #F0E2CA;
@@ -121,6 +112,7 @@ header {
 	padding: 2%;
 	padding-bottom: 6%;
 }
+
 .subtitle p {
 	float: 10vh;
 }
@@ -155,6 +147,10 @@ header {
 	font-size: 200%;
 }
 
+.letter-sp {
+	font-size: 85%;
+}
+
 .letter-up {
 	margin-top: 3%;
 	margin-left: 10%;
@@ -174,37 +170,36 @@ header {
 .ac {
 	background-color: #FAF8F5;
 }
+
 .title-explain {
 	text-align: center;
 	line-height: 180%;
 }
+
 .plate {
 	text-align: center;
 }
+
 .element {
 	text-align: center;
 	display: flex;
 	justify-content: space-between;
 	flex-flow: row wrap;
-	/* margin-right: 10%;
-	margin-left: 10%; */
 	padding: 10%;
 }
+
 .element:nth-child(even) {
 	flex-direction: row-reverse;
 }
-.element img {
-	width: 300px;
-	height: ;
-	margin-bottom: 25%;
-	margin-right: 7%;
-}
+
 .sabusuku {
 	height: 540px;
 }
+
 .planning2 {
 	margin-bottom: 0;
 }
+
 .midtitle {
 	position: relative;
 	margin: 10% 0;
@@ -212,7 +207,6 @@ header {
 
 .subsubtitle {
 	padding: 0 20px;
-	font-size: 250%;
 	border-bottom: medium solid #F6AB44;
 	font-family: 'UD デジタル 教科書体 NK-R';
 	letter-spacing: 5px;
@@ -221,71 +215,33 @@ header {
 	transform: translateX(-50%);
 	z-index: 100;
 }
+
 .subsubback {
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	letter-spacing: 27px;
 	color: #F0E2CA;
 	position: absolute;
 	transform: translateY(-50%);
-	right: -70px;
-	font-size: 1500%;
 	margin-bottom: 5%;
 }
 
 /***** member voice *****/
 .membervoice {
 	position: relative;
-	padding: 10%;
+	/* padding: 10%; */
+}
+.member {
+	margin-top: 10%;
+	/* border: medium solid #5D261B; */
 }
 .member-t {
 	font-size: 190%;
 }
-.member {
-	margin-top: 10%;
-	text-align: center;
-	border: medium solid #5D261B;
-	transform: translate(10px,10px);
-}
+
 .doubleline {
 	text-align: center;
 	border: medium solid #F6AB44;
 	padding: 5%;
-	transform: translate(-42px,-25px);
-}
-/* button:after {
-	position: absolute;
-	top:2px;
-	left:-4px;
-	content:"";
-	height:100%;
-	width:100%;
-	z-index:-999;
-	-webkit-transform: rotate(-1deg);
-	-moz-transform: rotate(0deg);
-  } */
-.member-section {
-	position: relative;
-	margin: 15% 0;
-}
-.member p {
-	font-family: 'UD デジタル 教科書体 NK-R';
-	letter-spacing: 5px;
-	line-height: 150%;
-}
-.member-photo {
-	margin-bottom: 5%;
-	display: flex;
-	align-items: baseline;
-	justify-content: center;
-}
-.member-photo img {
-	width: 280px;
-}
-.grade {
-	width: 20%;
-}
-.name {
-	width: 20%;
 }
 
 /**** SNS ****/
@@ -330,6 +286,10 @@ footer {
 		display: none;
 	}
 
+	.wrap img {
+		position: relativeS;
+	}
+
 	.lt {
 		position: absolute;
 		top: 10%;
@@ -344,13 +304,16 @@ footer {
 
 	.rb {
 		position: absolute;
-		bottom: 10%;
+		left: 10%;
 		right: 10%;
+		bottom: 10%;
 	}
 
 	.rb img {
-		margin-bottom: 24px;
+		margin-bottom: -24px;
 	}
+
+	.hamberger {}
 
 	button {
 		margin: 10%;
@@ -438,6 +401,31 @@ footer {
 		margin-right: 50px;
 	}
 
+	.title img {
+		width: 80%;
+		margin-top: 10%;
+	}
+
+	.subtitle {
+		font-family: 'UD デジタル 教科書体 NK-R';
+		font-size: 77%;
+		letter-spacing: 5px;
+		text-align: center;
+		padding: 2%;
+		padding-bottom: 6%;
+	}
+
+	/**** moveSNS ****/
+	.moveSNS {
+		text-align: center;
+		margin: 10%;
+		width: 2226x;
+	}
+
+	.moveSNS img {
+		width: 90%;
+	}
+
 	/************ About us ************/
 	.aboutus {
 		background-color: #F0E2CA;
@@ -506,6 +494,88 @@ footer {
 	p.letter-sp.sp {
 		margin-bottom: 30px;
 	}
+
+	/****** ac ******/
+	.element {
+		margin: ;
+	}
+
+	.element img {
+		width: 90%;
+		margin-top: 10%;
+		margin-bottom: 25%;
+		margin-right: 5%;
+		margin-left: 5%;
+	}
+
+	.subsubtitle {
+		font-size: 120%;
+	}
+
+	.subsubback {
+		font-size: 500%;
+		padding-bottom: 10%;
+		overflow: hidden;
+	}
+
+	.back-event {
+		right: -10%;
+	}
+
+	.back-plan {
+		left: -0.01%;
+	}
+
+	/****** mem ******/
+
+	.membervoice {
+		/* padding: 10%; */
+	}
+
+	.mamber {
+		/* margin: 5%; */
+		/* transform: translate(8px, 10px); */
+	}
+
+	/*.doubleline {
+		transform: translate(15px, 10px);
+	} */
+
+	/* .member-photo img {
+		width: 220px;
+	} */
+
+
+	.member-section {
+		position: relative;
+		margin: 15% 0;
+	}
+
+	.member p {
+		font-family: 'UD デジタル 教科書体 NK-R';
+		letter-spacing: 5px;
+		line-height: 150%;
+	}
+
+	.mem-sp {
+		text-align: right;
+	}
+
+	.member-photo {
+		margin-bottom: 5%;
+		display: flex;
+		flex-direction: column;
+		/* align-items: baseline; */
+		justify-content: center;
+	}
+
+	/* .grade {
+		width: 20%;
+	}
+
+	.name {
+		width: 20%;
+	} */
 
 	/****** SNS ******/
 	.SNS {
@@ -586,6 +656,25 @@ footer {
 		margin-right: 50px;
 	}
 
+	.title img {
+		width: 45%;
+		margin-top: 10%;
+	}
+
+	.subtitle {
+		font-family: 'UD デジタル 教科書体 NK-R';
+		letter-spacing: 5px;
+		text-align: center;
+		padding: 2%;
+		padding-bottom: 6%;
+	}
+
+	.moveSNS {
+		text-align: center;
+		width: 20%;
+		padding: 10%;
+	}
+
 	/**** About us ****/
 	.aboutus {
 		background-color: #F0E2CA;
@@ -641,7 +730,85 @@ footer {
 		margin-right: 10%;
 	}
 
+	/****** ac ******/
 
+	.element img {
+		width: 300px;
+		margin-bottom: 25%;
+		margin-right: 5%;
+	}
+
+	.subsubtitle {
+		font-size: 270%;
+	}
+
+	.subsubback {
+		font-size: 1500%;
+	}
+
+	.back-event {
+		right: -4%;
+	}
+
+	.back-plan {
+		left: -3%;
+	}
+
+
+
+	/****** mem ******/
+	.membervoice {
+		padding: 10%;
+	}
+
+	.mem-pc {
+		
+	}
+
+	.mamber {
+		transform: translate(10px, 10px);
+	}
+
+	.member-pc {
+		text-align: center;
+	}
+
+	.doubleline {
+		transform: translate(10px, 10px);
+	}
+
+	.member-photo img {
+		width: 280px;
+	}
+
+
+	.member-section {
+		position: relative;
+		margin: 15% 0;
+	}
+
+	.member p {
+		font-family: 'UD デジタル 教科書体 NK-R';
+		letter-spacing: 5px;
+		line-height: 150%;
+	}
+
+	.member-photo {
+		margin-bottom: 5%;
+		display: flex;
+		align-items: baseline;
+		justify-content: center;
+	}
+
+	.grade {
+		width: 20%;
+	}
+
+	.name {
+		width: 20%;
+	}
+
+	/****** SNS ******/
 	.SNS {
 		background-color: #F0E2CA;
 		text-align: center;
