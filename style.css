@@ -810,9 +810,6 @@ footer {
 	.member-photo {
 		padding: 5%;
 		margin-bottom: 10%;
-		/* display: flex;
-		flex-direction: column;
-		justify-content: center; */
 		text-align: center;
 	}
 
@@ -888,7 +885,6 @@ footer {
 	}
 
 	.kotira {
-		width: 35%;
 		text-align: center;
 		font-size: 34px;
 	}
